@@ -70,18 +70,15 @@ input[type="text"]::placeholder {
 	font-size: 4em;
 	line-height: 125%;
 }
-.landing-button {
+#landing-button {
 	margin: 40px 0;
 }
-.landing-button-text {
+#landing-button-text {
 	font-family: inherit;
 	font-size: 1.2em;
 }
-.landing-button-circle {
+#landing-button-circle {
 	z-index: -1;
-}
-.landing-button-circle:hover {
-	/* nothing yet */ 
 }
 button {
 	font-family: inherit;

@@ -50,20 +50,18 @@
 							</div>
 						</form>
 					</div>
-					<div class="landing-button">
-						<button>
-							<svg width="120px" height="120px" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-								<g>
-									<circle class="landing-button-circle" fill="#FF4343" cx="60" cy="60" r="60" />
-									<text class="landing-button-text" x="42" y="50">
-										Be a
-									</text>
-									<text class="landing-button-text" x="22" y="75">
-										found.er
-									</text>
-								</g>
-							</svg>
-						</button>
+					<div id="landing-button">
+						<svg id="landing-button-svg" width="120px" height="120px" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<circle id="landing-button-circle" fill="#FF4343" cx="60" cy="60" r="60" />
+								<text id="landing-button-text" x="42" y="50">
+									Be a
+								</text>
+								<text id="landing-button-text" x="22" y="75">
+									found.er
+								</text>
+							</g>
+						</svg>
 					</div>
 				</div>
 				<div class="right-side">
@@ -125,5 +123,9 @@
 				</div>
 			</section>
 		</div>
+
+		<!-- Scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+		<script type="text/javascript" src="./scripts.js"></script>
 	</body>
 </html>
