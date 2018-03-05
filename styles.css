@@ -18,6 +18,8 @@ body {
 	margin: 0 auto;
 }
 
+/* ------------------------------------------------------------------------------------- Landing Page */
+
 /* Layout */ 
 .content-container {
 	display: flex;
@@ -80,12 +82,27 @@ input[type="text"]::placeholder {
 #landing-button-circle {
 	z-index: -1;
 }
+#landing-button-circle:hover {
+	animation: pulse 1s;
+}
 button {
 	font-family: inherit;
 	font-size: inherit;
 	border: none;
 	background-color: none;
 	outline: 0;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 /* Right Side */ 
@@ -228,4 +245,59 @@ button {
 	bottom: -50px;
 	left: -50px;
 	opacity: 0;
+}
+
+
+/* ------------------------------------------------------------------------------------- Be Found.er Page */
+.founder-page {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-style: inherit;
+}
+.founder-title {
+	opacity: 0;
+	font-size: 4em;
+	max-width: 600px;
+	animation: fadeIn 1s ease-out 0s forwards;
+}
+.founder-subtitle {
+	opacity: 0;
+	font-size: 3em;
+	max-width: 600px;
+	line-height: 140%;
+	animation: fadeIn 1s ease-out 1.5s forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(0px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(-10px);
+	}
+}
+.button-group {
+	display: flex;
+	justify-content: center;
+}
+.founder-button {
+	opacity: 0;
+	font-size: 1.2em;
+	color: #000;
+	padding: 18px 60px;
+	margin-top: 80px;
+	margin-bottom: 20%;
+	margin-left: 30px;
+	border-radius: 100px;
+	background-color: #F4F4F8;
+	animation: fadeIn 1s ease-out 3s forwards;
+}
+.founder-button:hover {
+	background-color: #84DCCF;
+	cursor: pointer;
 }

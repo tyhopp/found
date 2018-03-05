@@ -12,57 +12,58 @@ const circleText = document.getElementsByClassName('landing-button-text');
 const screenWidth = window.innerWidth;
 const screenHeight = window.innerHeight;
 
-circle.addEventListener('click', function() {
+if (circle) {
+	circle.addEventListener('click', function() {
 
-	// Hide text in circle button
-	TweenMax.to(circleText[0], 1, {attr: {
-		opacity: 0,
-	}});
-	TweenMax.to(circleText[1], 1, {attr: {
-		opacity: 0,
-	}});
+		// Hide text in circle button
+		TweenMax.to(circleText[0], 1, {attr: {
+			opacity: 0,
+		}});
+		TweenMax.to(circleText[1], 1, {attr: {
+			opacity: 0,
+		}});
 
-	// Fade out backround 
-	TweenMax.to(mainContainer[0], 0.4, {
-		opacity: 0,
+		// Fade out backround 
+		TweenMax.to(mainContainer[0], 0.4, {
+			opacity: 0,
+		});
+		TweenMax.to(mainContainer[0], 0.5, {
+			scale: 0,
+			x: event.pageY * -1,
+			y: event.pageX * 0.001,
+			display: 'none',
+			ease: Power4.easeInOut,
+		});
+
+		// Set viewBox, width & height of circle SVG to screen size 
+		circleSVG.setAttribute('position', 'absolute');
+		circleSVG.setAttribute('z-index', 3);
+		circleSVG.setAttribute('top', 0);
+		circleSVG.setAttribute('left', 0);
+
+		// Move SVG to root DOM position 
+		body.insertBefore(circleSVG, mainContainer[0]);
+
+		// Reset parent SVG canvas
+		TweenMax.to(circleSVG, 0.1, {attr: {
+			viewBox: `0 0 ${screenWidth} ${screenHeight}`,
+			width: `${screenWidth}`,
+			height: `${screenHeight}`,
+		}}).delay(0.3);
+
+		// Reset circle coordinates in SVG canvas
+	  circle.setAttribute('cx', event.pageX);
+	  circle.setAttribute('cy', event.pageY);
+
+		// Expand circle's radius to full screen
+		TweenMax.to(circle, 2, {attr:{
+			r: `${screenWidth}` * 1.2,
+			ease: Power3.easeOut,
+		}}).delay(0.5);
 	});
-	TweenMax.to(mainContainer[0], 0.5, {
-		scale: 0,
-		x: event.pageY * -1,
-		y: event.pageX * 0.001,
-		display: 'none',
-		ease: Power4.easeInOut,
-	});
 
-	// Set viewBox, width & height of circle SVG to screen size 
-	circleSVG.setAttribute('position', 'absolute');
-	circleSVG.setAttribute('z-index', 3);
-	circleSVG.setAttribute('top', 0);
-	circleSVG.setAttribute('left', 0);
-
-	// Move SVG to root DOM position 
-	body.insertBefore(circleSVG, mainContainer[0]);
-
-	// Reset parent SVG canvas
-	TweenMax.to(circleSVG, 0.1, {attr: {
-		viewBox: `0 0 ${screenWidth} ${screenHeight}`,
-		width: `${screenWidth}`,
-		height: `${screenHeight}`,
-	}}).delay(0.3);
-
-	// Reset circle coordinates in SVG canvas
-  circle.setAttribute('cx', event.pageX);
-  circle.setAttribute('cy', event.pageY);
-
-	// Expand circle's radius to full screen
-	TweenMax.to(circle, 2, {attr:{
-		r: `${screenWidth}` * 1.2,
-		ease: Power4.easeInOut,
-	}}).delay(0.5);
-});
-
-
-// Function to delay link redirects by 2 seconds.
-function delay (URL) {
-	setTimeout( function() { window.location = URL }, 2000 );
+	// Function to delay link redirects by 2 seconds.
+	function delay (URL) {
+		setTimeout( function() { window.location = URL }, 2500 );
+	}
 }
