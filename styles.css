@@ -73,7 +73,7 @@ input[type="text"]::placeholder {
 #landing-button {
 	margin: 40px 0;
 }
-#landing-button-text {
+.landing-button-text {
 	font-family: inherit;
 	font-size: 1.2em;
 }
