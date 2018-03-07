@@ -83,7 +83,7 @@ input[type="text"]::placeholder {
 	z-index: -1;
 }
 #landing-button-circle:hover {
-	animation: pulse 1s;
+	animation: pulse 0.4s forwards;
 }
 button {
 	font-family: inherit;
@@ -95,14 +95,13 @@ button {
 
 @keyframes pulse {
   from {
-    transform: scale3d(1, 1, 1);
+    transform: scale(1);
+    transform-origin: center;
   }
-  50% {
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-  to {
-    transform: scale3d(1, 1, 1);
-  }
+	to {
+		transform: scale(1.05);
+		transform-origin: center;
+	}
 }
 
 /* Right Side */ 
