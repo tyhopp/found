@@ -64,6 +64,6 @@ if (circle) {
 
 	// Function to delay link redirects by 2 seconds.
 	function delay (URL) {
-		setTimeout( function() { window.location = URL }, 2500 );
+		setTimeout( function() { window.location = URL }, 1500 );
 	}
 }

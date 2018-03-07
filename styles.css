@@ -261,14 +261,14 @@ button {
 	opacity: 0;
 	font-size: 4em;
 	max-width: 600px;
-	animation: fadeIn 1s ease-out 0s forwards;
+	animation: fadeIn 0.8s ease-out 0s forwards;
 }
 .founder-subtitle {
 	opacity: 0;
 	font-size: 3em;
 	max-width: 600px;
 	line-height: 140%;
-	animation: fadeIn 1s ease-out 1.5s forwards;
+	animation: fadeIn 0.8s ease-out 1s forwards;
 }
 
 @keyframes fadeIn {
@@ -295,7 +295,7 @@ button {
 	margin-left: 30px;
 	border-radius: 100px;
 	background-color: #F4F4F8;
-	animation: fadeIn 1s ease-out 3s forwards;
+	animation: fadeIn 0.8s ease-out 2s forwards;
 }
 .founder-button:hover {
 	background-color: #84DCCF;
