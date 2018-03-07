@@ -187,13 +187,13 @@ button {
   transition-timing-function: cubic-bezier(0.0700, 0.843, 0.705, 1.06); /* matching Found logo animation */
 }
 .stream-1:hover {
-	border-bottom-right-radius: 120px;
+	border-bottom-right-radius: 110px;
 }
 .stream-2:hover {
-	border-top-left-radius: 120px;
+	border-top-left-radius: 110px;
 }
 .stream-4:hover {
-	border-bottom-left-radius: 120px;
+	border-bottom-left-radius: 110px;
 }
 .stream-tac-container-1 {
 	position: relative;
@@ -225,8 +225,8 @@ button {
 .stream-tac-2 {
 	position: absolute;
 	z-index: 1;
-	top: -50px;
-	left: -50px;
+	top: -45px;
+	left: -58px;
 	opacity: 0;
 }
 .stream-tac-container-4 {
