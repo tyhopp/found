@@ -56,7 +56,7 @@ if (circle) {
 	  circle.setAttribute('cy', event.pageY);
 
 		// Expand circle's radius to full screen
-		TweenMax.to(circle, 2, {attr:{
+		TweenMax.to(circle, 1, {attr:{
 			r: `${screenWidth}` * 1.2,
 			ease: Power3.easeOut,
 		}}).delay(0.5);
