@@ -10,6 +10,7 @@ This project was setup with [Site Starter](https://github.com/tyhopp/site-starte
 ## Usage
 - `git clone https://github.com/tyhopp/found`
 - `cd found`
+- Run local server (below). 
 
 ## Local Server
 Run this project with a localhost setup of your choice. I recommend [MDN's approach using Python](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server). Here are the steps:
