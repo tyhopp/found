@@ -274,14 +274,12 @@ button {
 .founder-title {
 	opacity: 0;
 	font-family: acta-poster, serif;
-font-style: normal;
-font-weight: 300;
-
-
+	font-style: normal;
+	font-weight: 300;
 	letter-spacing: 3px;
-	font-size: 5.6em;
+	font-size: 4.2em;
 	max-width: 700px;
-	color: #fff;
+	color: #092D4A;
 	animation: fadeIn 0.8s ease-out 0s forwards;
 }
 .founder-subtitle {
