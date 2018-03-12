@@ -8,10 +8,17 @@
 }
 
 @font-face {
-	font-family: 'Acta';
+	font-family: acta-poster, serif;
 	src: url('./fonts/acta_regular.otf');
+	font-style: normal;
+	
 }
 
+html {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
 body {
 	font-family: 'TTNorms', sans-serif;
 	font-size: 16px;
@@ -266,7 +273,9 @@ button {
 }
 .founder-title {
 	opacity: 0;
-	font-family: 'Acta';
+	font-family: acta-poster, serif;
+font-style: normal;
+font-weight: 300;
 	letter-spacing: 2px;
 	font-size: 4.2em;
 	max-width: 600px;
