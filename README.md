@@ -23,3 +23,9 @@ Run this project with a localhost setup of your choice. I recommend [MDN's appro
 This site is a prototype and is not meant for production. Known issues:
 - Animated page transition is achieved with custom Javscript and a `setTimeout` function to delay URL routing. For an approach better suited for production, see [Luigi De Rosa's PJAX method](https://www.smashingmagazine.com/2016/07/improving-user-flow-through-page-transitions/). 
 - There is some jank on hover over right-hand image streams.
+
+## License
+
+MIT License
+
+Copyright (c) 2018 Ty Hopp
